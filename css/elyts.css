@@ -7,15 +7,18 @@
     margin-left: 10%;
     margin-top: 5%;
     width: 50%;
-    background-color: #FFFCF2;
+    background-color: #fffcf2;
     color: black;
     cursor: text;
 }
 #hi {
-    width : min-content;
+    width: min-content;
     min-width: 11%;
     font-size: 500%;
     font-weight: 600;
+    background-color: #FFCF00;
+}
+#hi::selection {
     background-color: #FFCF00;
 }
 #Name {
@@ -59,10 +62,7 @@
   a:hover:after {
     top: 0%;
   }
-  @media (prefers-color-scheme: dark) {
-    body {
-      color: #EEE;
-      background-color: #1A202C;
+
     }
     a {
       color: #EFEFEF;
@@ -71,3 +71,36 @@
       background-color: rgba(255, 213, 74, 0.7)
     }
   }
+#skill {
+  text-align: center;
+  margin-right: 0%;
+}
+#language {
+  font-size: 110%;
+  display: inline;
+  margin-top: 0%;
+}
+#title_skills {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 140%;
+}
+#title_language {
+  text-align: center;
+  font-size: 110%;
+}
+div#language div {
+  display: inline-block;
+  margin: 7%;
+  font-size: 80%;
+}  
+.image_language {
+  width: 10%;
+}
+div.div_language {
+  max-width: 5%;
+  width: 10%;
+}
+.ico_js {
+  color: #FFCF00;
+}
