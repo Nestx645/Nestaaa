@@ -9,6 +9,7 @@
     width: 50%;
     background-color: #FFFCF2;
     color: black;
+    cursor: text;
 }
 #hi {
     width : min-content;
