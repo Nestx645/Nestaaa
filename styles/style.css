@@ -106,11 +106,8 @@ body {
     border-radius: 10px;
     transform: scale(0.985);
     transition: all 0.3s ease;
-    margin: 5% auto 0;
+    margin: 2% auto 0;
     background: #ffc15e;
-}
-#slider:hover {
-    transform: scale(1);
 }
 .infoSite {
     display: flex;
@@ -177,4 +174,21 @@ body {
 .controlButton:hover {
     background-color: #222;
     color: #fff;
+}
+.animNext {
+    animation: animNext 0.90s ease forwards;
+}
+@keyframes animNext {
+    50% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    75%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
