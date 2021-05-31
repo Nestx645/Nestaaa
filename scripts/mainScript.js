@@ -51,3 +51,32 @@ function animationNext() {
     setTimeout(function(){ document.getElementById("timeToDo").classList.remove("animNext"); }, 1000);
     setTimeout(function(){ document.getElementById("imgSite").classList.remove("animNext"); }, 1000);
 }
+
+function previousWebsite() {
+
+    currentIndexWebsite = verifCurrent()-2
+    
+    if (currentIndexWebsite === -1 ) {
+        currentIndexWebsite = 4;
+    }
+    document.getElementById("languagesRequire").innerText = Languages[currentIndexWebsite];
+    document.getElementById("siteName").innerText = websites[currentIndexWebsite];
+    document.getElementById("timeToDo").innerText = projectDuration[currentIndexWebsite];
+    document.getElementById("currentSite").innerText = "0" + (currentIndexWebsite + 1);
+
+    animationNext()
+}
+function animationPrevious() {
+    currentIndexWebsite -= 2;
+    document.getElementById("languagesRequire").classList.add("animPrevious");
+    document.getElementById("siteName").classList.add("animPrevious");
+    document.getElementById("timeToDo").classList.add("animPrevious");
+    document.getElementById("imgSite").classList.add("animPrevious");
+    document.getElementById('slider').style.backgroundColor = backgrounds[currentIndexWebsite];
+    document.getElementById('slider').style.color = colors[currentIndexWebsite];
+    setTimeout(function(){ document.getElementById("imgSite").setAttribute('src', images[currentIndexWebsite]) }, 500);
+    setTimeout(function(){ document.getElementById("languagesRequire").classList.remove("animPrevious"); }, 1000);
+    setTimeout(function(){ document.getElementById("siteName").classList.remove("animPrevious"); }, 1000);
+    setTimeout(function(){ document.getElementById("timeToDo").classList.remove("animPrevious"); }, 1000);
+    setTimeout(function(){ document.getElementById("imgSite").classList.remove("animPrevious"); }, 1000);
+}

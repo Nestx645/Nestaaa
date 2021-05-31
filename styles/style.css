@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap');
 
 html {
   box-sizing: border-box;
 }
 body {
-    background-color: #222;
     color: #fff;
     font-family: Roboto, sans-serif;
 }
@@ -26,10 +26,9 @@ body {
   align-items: center;
   justify-content: center;
   border-bottom: #222 10px solid;
-  color: #222;
 }
 .scrollArea:nth-of-type(1) {
-  background: #5cabf5;
+    background: #222;
 }
 
 .scrollArea:nth-of-type(3) {
@@ -66,15 +65,11 @@ body {
     transform: translateX(-400%);
 }
 #SVG { 
-    margin: 20% 0 0 10%;
+    margin: 50% 0 0 -40%;
     grid-area: 1 / 2 / 3 / 3;
     transform: translateX(400%);
-    background: transparent;
     height: 100vh;
-    width: 50vw;
-}
-.SVG {
-    width: 80%;
+
 }
 .animX {
     animation: animX 0.7s ease forwards;
@@ -191,4 +186,27 @@ body {
         opacity: 1;
         transform: translateX(0%);
     }
+}
+.animPrevious {
+    animation: animPrevious 0.90s ease forwards;
+}
+@keyframes animPrevious {
+    50% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    75%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.comment {
+    color: #27AC00;
+    font-size: 150%;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 3px;
 }
