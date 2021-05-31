@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
 
+html {
+  box-sizing: border-box;
+}
 body {
     background-color: #222;
     color: #fff;
@@ -19,6 +22,7 @@ body {
 .scrollArea {
   scroll-snap-align: start;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-bottom: #222 10px solid;
@@ -29,7 +33,7 @@ body {
 }
 
 .scrollArea:nth-of-type(2) {
-  background: #ffc15e;
+  /* background: #ffc15e; */
 }
 
 .scrollArea:nth-of-type(3) {
@@ -93,9 +97,88 @@ body {
     }
 }
 
-#mainTitle {
-    font-size: 250%;
-    text-align: center;
-    transform: translateY(-400%);
-}
+
+/* Slider */
   
+#slider {
+    display: grid;
+    grid-template-columns: 30vw 33vw 30vw;
+    padding: 5%;
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto 0 -5%;
+    border-radius: 10px;
+    transform: scale(0.985);
+    transition: all 0.3s ease;
+    margin: 0 auto 0;
+    background: #ffc15e;
+}
+#slider:hover {
+    transform: scale(1);
+}
+.infoSite {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+#languagesRequire {
+    font-size: 170%;
+    font-style: italic;
+    margin: 0;
+}
+#siteName {
+    font-size: 200%;
+    font-weight: 700;
+    font-style: italic;
+    margin: 5% 0;
+}
+#timeToDo {
+    font-size: 130%;
+    font-weight: 300;
+    margin: 0 0 5%;
+}
+.buttonSeeWebsite {
+    font-size: 150%;
+    border: none;  
+    padding: 5%;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttonSeeWebsite:hover {
+    background-color: #222;
+    color: white;
+}
+.imageSite > img{
+    transform: translateX(-10%);
+    width: 130%;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.numberSite {
+    font-size: 160%;
+    text-align: right;
+}
+.nextOrPrevious {
+    text-align: right;
+}
+.controlButton {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 130%;
+    border: none;
+    margin-left: 3%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.controlButton:hover {
+    background-color: #222;
+    color: #fff;
+}
