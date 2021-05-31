@@ -21,40 +21,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  border-bottom: #222 10px solid;
+  color: #222;
 }
 .scrollArea:nth-of-type(1) {
-  background: #684bc99d;
+  background: #5cabf5;
 }
 
 .scrollArea:nth-of-type(2) {
-  background: #e9785b;
+  background: #ffc15e;
 }
 
 .scrollArea:nth-of-type(3) {
-  background: #64b4f6;
+  background: #59ec85;
 }
 #heroHeader {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas:
-      "logo SVG"
-      "HeroTitle SVG"
-      ". SVG";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
   
 #logo { 
-    grid-area: logo; 
+    margin: 15% 0 0 5%;
     width: 40%;
-    transform: translateX(-400%)
+    transform: translateX(-400%);
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 #HeroTitles { 
-    grid-area: HeroTitle;
-    
+    grid-area: 2 / 1 / 3 / 2; 
 }
 #heroTitle {
-    margin: 20% 0 0 15%;
+    margin: 10% 0 0 15%;
     font-size: 200%;
     font-weight: 500;
     font-style: italic;
@@ -67,11 +67,15 @@ body {
 }
 #SVG { 
     margin: 20% 0 0 10%;
-    grid-area: SVG; 
-    width: 80%;
+    grid-area: 1 / 2 / 3 / 3;
     transform: translateX(400%);
+    background: transparent;
+    height: 100vh;
+    width: 50vw;
 }
-
+.SVG {
+    width: 80%;
+}
 .animX {
     animation: animX 0.7s ease forwards;
 }
@@ -79,5 +83,19 @@ body {
     100% {
         transform: translateX(0%)
     }
+}
+.animY {
+    animation: animY 0.7s ease forwards;
+}
+@keyframes animY {
+    100% {
+        transform: translateY(0%)
+    }
+}
+
+#mainTitle {
+    font-size: 250%;
+    text-align: center;
+    transform: translateY(-400%);
 }
   
