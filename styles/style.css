@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap');
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+}
+.scrollContainer,
+.scrollArea {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.scrollContainer {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scrollArea {
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.scrollArea:nth-of-type(1) {
+  background: #684bc99d;
+}
+
+.scrollArea:nth-of-type(2) {
+  background: #e9785b;
+}
+
+.scrollArea:nth-of-type(3) {
+  background: #64b4f6;
+}
+#heroHeader {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+      "logo SVG"
+      "HeroTitle SVG"
+      ". SVG";
+}
+  
+#logo { 
+    grid-area: logo; 
+    width: 40%;
+    transform: translateX(-400%)
+}
+
+#HeroTitles { 
+    grid-area: HeroTitle;
+    
+}
+#heroTitle {
+    margin: 20% 0 0 15%;
+    font-size: 200%;
+    font-weight: 500;
+    font-style: italic;
+    transform: translateX(-400%);
+}
+#heroSubTitle {
+    font-size: 150%;
+    margin-left: 15%;
+    transform: translateX(-400%);
+}
+#SVG { 
+    margin: 20% 0 0 10%;
+    grid-area: SVG; 
+    width: 80%;
+    transform: translateX(400%);
+}
+
+.animX {
+    animation: animX 0.7s ease forwards;
+}
+@keyframes animX {
+    100% {
+        transform: translateX(0%)
+    }
+}
+  
