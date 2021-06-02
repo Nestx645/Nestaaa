@@ -1,31 +1,5 @@
-function loader() {
-    document.getElementById("body").style.backgroundColor = "rgb(152, 127, 173)";
-    document.getElementById("heroTitleTypewrite").style.transform = "scale(4)";
-    document.getElementById("heroTitleTypewrite").style.textAlign = "center";
-    document.getElementById("heroTitleTypewrite").style.marginTop = "-30%";
-    document.getElementById("heroTitleTypewrite").style.marginLeft = "70%";
-    document.getElementById("heroTitleTypewrite").style.width = "100%";
-    
-    setTimeout(function(){ 
-        document.getElementById("body").style.backgroundColor = "rgb(152, 127, 173)";
-        document.getElementById("body").style.display = "none";
-        document.getElementById("heroTitleTypewrite").style.transform = "scale(1)";
-        document.getElementById("heroTitleTypewrite").style.textAlign = "left";
-        document.getElementById("heroTitleTypewrite").style.marginTop = "25%";
-        document.getElementById("heroTitleTypewrite").style.marginLeft = "15%";
-        document.getElementById("heroTitleTypewrite").style.width = "100%";
-    }, 5300);
-    setTimeout(function(){ 
-        document.getElementById("body").style.display = "block";
-        animLoad()
-    }, 5305);
-    
-    
-}
-
 function animLoad(){
     document.getElementById("logo").classList.add("animX");
-    setTimeout(function(){ document.getElementById("heroTitleTypewrite").classList.add("animX"); }, 300);
     setTimeout(function(){ document.getElementById("heroTitle").classList.add("animX"); }, 300);
     setTimeout(function(){ document.getElementById("heroSubTitle").classList.add("animX"); }, 300);
     setTimeout(function(){ document.getElementById("SVG").classList.add("animX"); }, 600);
@@ -138,7 +112,7 @@ function choiceLanguage(language) {
         setTimeout(function(){ document.getElementById("body").style.opacity = "1" }, 1000);
     }
     else if (language === 'fr'){
-        bigTitle.innerText = "Je suis Xtsen";
+        bigTitle.innerText = "Bonjour, Je suis Xtsen";
         subTitle.innerText = "Maintenant que les présentations sont faites, je vous invite à découvrir mes projets";
         buttonWebsite.innerText = "Voir le site";
         setTimeout(function(){ document.getElementById("body").style.opacity = "1" }, 1000);
