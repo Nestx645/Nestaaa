@@ -131,6 +131,10 @@ function choiceLanguage(language) {
     subTitle = document.getElementById("heroSubTitle")
     buttonWebsite = document.getElementById("buttonSeeWebsite")
 
+    titleAbout = document.getElementById("titleAboutMe")
+    subTitleAbout = document.getElementById("subTitleAboutMe")
+    contactTitle = document.getElementById("linkToMail")
+
     if (language === 'en') {
         bigTitle.innerText = "Hey ! I'm Xtsen";
         subTitle.innerText = "Now you know me so you can discover my projects";
@@ -141,6 +145,10 @@ function choiceLanguage(language) {
         bigTitle.innerText = "Je suis Xtsen";
         subTitle.innerText = "Maintenant que les présentations sont faites, je vous invite à découvrir mes projets";
         buttonWebsite.innerText = "Voir le site";
+
+        titleAbout.innerText = "A propos de moi";
+        subTitleAbout.innerText = "J'ai 16 et je suis en premièreau lycée St Francois d'Assise. Je prefère le frontend mais j'ai aussi fait un peu de python et de C++. Je voudrais devenir freelancer dans le frontend mais c'est assez compliqué.";
+        contactTitle.innerText = "Contactez moi !";
         setTimeout(function(){ document.getElementById("body").style.opacity = "1" }, 1000);
     }
 }
