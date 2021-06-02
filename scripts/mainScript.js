@@ -2,8 +2,8 @@ function loader() {
     document.getElementById("body").style.backgroundColor = "rgb(152, 127, 173)";
     document.getElementById("heroTitleTypewrite").style.transform = "scale(4)";
     document.getElementById("heroTitleTypewrite").style.textAlign = "center";
-    document.getElementById("heroTitleTypewrite").style.marginTop = "-30%";
-    document.getElementById("heroTitleTypewrite").style.marginLeft = "70%";
+    document.getElementById("heroTitleTypewrite").style.marginTop = "-20%";
+    document.getElementById("heroTitleTypewrite").style.marginLeft = "85%";
     document.getElementById("heroTitleTypewrite").style.width = "100%";
     
     setTimeout(function(){ 
