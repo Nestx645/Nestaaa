@@ -90,3 +90,8 @@ function linkwebsite() {
 
     document.location.href = links[linkSite];
 }
+
+function showSlider() {
+    document.getElementById("slider").style.opacity =  "1";
+    
+}
