@@ -93,5 +93,28 @@ function linkwebsite() {
 
 function showSlider() {
     document.getElementById("slider").style.opacity =  "1";
-    
+
+}
+
+function choiceLanguage(language) {
+    // Animation body
+    document.getElementById("body").style.opacity = "0";
+    document.getElementById("body").style.backgroundColor = "rgb(152, 127, 173)";
+
+    bigTitle = document.getElementById("heroTitle")
+    subTitle = document.getElementById("heroSubTitle")
+    buttonWebsite = document.getElementById("buttonSeeWebsite")
+
+    if (language === 'en') {
+        bigTitle.innerText = "Hey ! I'm Xtsen";
+        subTitle.innerText = "Now you know me so you can discover my projects";
+        buttonWebsite.innerText = "Watch this";
+        setTimeout(function(){ document.getElementById("body").style.opacity = "1" }, 1000);
+    }
+    else if (language === 'fr'){
+        bigTitle.innerText = "Bonjour, Je suis Xtsen";
+        subTitle.innerText = "Maintenant que les présentations sont faites, je vous invite à découvrir mes projets";
+        buttonWebsite.innerText = "Voir le site";
+        setTimeout(function(){ document.getElementById("body").style.opacity = "1" }, 1000);
+    }
 }

@@ -9,6 +9,7 @@ body {
     color: #fff;
     font-family: Roboto, sans-serif;
     padding: 0;
+    transition: all 0.3s ease;
 }
 .scrollContainer,
 .scrollArea {
@@ -36,7 +37,22 @@ body {
     background: #ffc15e;
 }
 .scrollArea:nth-of-type(3) {
-  background: #59ec85;
+  background: #59a5ec;
+}
+.chooseLanguage {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    font-size: 120%;
+    z-index: 100000;
+    cursor: pointer;
+}
+.language {
+    transition: all 0.3s ease;
+}
+.language:hover {
+    color: rgb(27, 27, 27);
+    font-size: 130%;
 }
 #heroHeader {
     display: grid;
@@ -96,7 +112,7 @@ body {
   
 #slider {
     display: grid;
-    grid-template-columns: 30vw 33vw 30vw;
+    grid-template-columns: 30vw 43vw 20vw;
     padding: 5%;
     width: 90vw;
     height: 85vh;
@@ -126,7 +142,7 @@ body {
     font-weight: 300;
     margin: 0 0 5%;
 }
-.buttonSeeWebsite {
+#buttonSeeWebsite {
     font-size: 150%;
     border: none;  
     padding: 5%;
@@ -135,12 +151,12 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.buttonSeeWebsite:hover {
+#buttonSeeWebsite:hover {
     background-color: #222;
     color: white;
 }
 .imageSite > img{
-    transform: translateX(-10%);
+    transform: translateX(-15%);
     width: 130%;
 }
 .controls {
