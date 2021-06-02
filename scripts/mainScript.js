@@ -138,6 +138,7 @@ function choiceLanguage(language) {
     if (language === 'en') {
         bigTitle.innerText = "Hey ! I'm Xtsen";
         subTitle.innerText = "Now you know me so you can discover my projects";
+        subTitleAbout.innerText = "I'm 16 and I'm in 11th grade in St Francois d'assise high school. I prefer frontend but I also learn a bit of python and C++. I want to be a freelancer in frontend but it's not easy !";
         buttonWebsite.innerText = "Watch this";
         setTimeout(function(){
             document.getElementById("body").style.opacity = "1";
