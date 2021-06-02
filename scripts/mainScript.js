@@ -14,6 +14,7 @@ const projectDuration = ['100h', '60h', '20h', '10h', '4-5h']
 const backgrounds = ['#ffc15e', '#36D9DE', '#DE36A1', '#9936DE', '#3694DE']
 const colors = ['#222', '#fff', '#222', '#fff', '#222']
 const images = ['res/backgroundEveryweb.png', 'res/backgroundSFDALove.png', 'res/backgroundEkip.png', 'res/backgroundHelpME.png', 'res/backgroundWorkout.png']
+const links = ['https://xtsen.github.io/Everyweb/', 'https://xtsen.github.io/SFDA-love/', 'http://so667.epizy.com/', 'http://helpme.byethost8.com/index.html', 'https://xtsen.github.io/Workout/']
 
 function verifCurrent() {
     current = document.getElementById('siteName').innerText
@@ -81,4 +82,11 @@ function animationPrevious() {
     setTimeout(function(){ document.getElementById("siteName").classList.remove("animPrevious"); }, 1000);
     setTimeout(function(){ document.getElementById("timeToDo").classList.remove("animPrevious"); }, 1000);
     setTimeout(function(){ document.getElementById("imgSite").classList.remove("animPrevious"); }, 1000);
+}
+
+
+function linkwebsite() {
+    linkSite = verifCurrent()-1;
+
+    document.location.href = links[linkSite];
 }
