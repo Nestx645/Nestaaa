@@ -1,4 +1,7 @@
 function loader() {
+
+    checkWidth()
+
     document.getElementById("body").style.backgroundColor = "rgb(152, 127, 173)";
     document.getElementById("heroTitleTypewrite").style.transform = "scale(4)";
     document.getElementById("heroTitleTypewrite").style.textAlign = "center";
@@ -14,15 +17,23 @@ function loader() {
         document.getElementById("heroTitleTypewrite").style.marginTop = "25%";
         document.getElementById("heroTitleTypewrite").style.marginLeft = "15%";
         document.getElementById("heroTitleTypewrite").style.width = "100%";
-    }, 5300);
+    }, 3300);
     setTimeout(function(){ 
         document.getElementById("body").style.display = "block";
         animLoad()
-    }, 5305);
+    }, 3305);
     
     
 }
+function checkWidth() {
+    wid = window.screen.width
 
+    if (wid < 768) {
+        return 'phone'
+    }else{
+        return 0
+    }
+}
 function animLoad(){
     document.getElementById("logo").classList.add("animX");
     setTimeout(function(){ document.getElementById("heroTitleTypewrite").classList.add("animX"); }, 300);
@@ -72,7 +83,12 @@ function animationNext() {
     document.getElementById("imgSite").classList.add("animNext");
     document.getElementById('slider').style.backgroundColor = backgrounds[currentIndexWebsite];
     document.getElementById('slider').style.color = colors[currentIndexWebsite];
-    setTimeout(function(){ document.getElementById("imgSite").setAttribute('src', images[currentIndexWebsite]) }, 500);
+    if (checkWidth() === 'phone') {
+        console.log('taille de l\'ecran trop petite');
+    }else{
+        setTimeout(function(){ document.getElementById("imgSite").setAttribute('src', images[currentIndexWebsite]) }, 500);
+    }
+    
     setTimeout(function(){ document.getElementById("languagesRequire").classList.remove("animNext"); }, 1000);
     setTimeout(function(){ document.getElementById("siteName").classList.remove("animNext"); }, 1000);
     setTimeout(function(){ document.getElementById("timeToDo").classList.remove("animNext"); }, 1000);
@@ -102,7 +118,11 @@ function animationPrevious() {
     document.getElementById('slider').style.backgroundColor = backgrounds[currentIndexWebsite];
     document.getElementById('slider').style.color = colors[currentIndexWebsite];
     
-    setTimeout(function(){ document.getElementById("imgSite").setAttribute('src', images[currentIndexWebsite]) }, 500);
+    if (checkWidth() === 'phone') {
+        console.log('taille de l\'ecran trop petite');
+    }else{
+        setTimeout(function(){ document.getElementById("imgSite").setAttribute('src', images[currentIndexWebsite]) }, 500);
+    }
     
     setTimeout(function(){ document.getElementById("languagesRequire").classList.remove("animPrevious"); }, 1000);
     setTimeout(function(){ document.getElementById("siteName").classList.remove("animPrevious"); }, 1000);
