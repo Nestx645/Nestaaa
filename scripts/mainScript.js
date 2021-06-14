@@ -45,13 +45,13 @@ function animLoad(){
 
 // Slider
 
-const websites = ['Everyweb', 'SFDA love', 'Ekip', 'Help me', 'Workout']
-const Languages = ['HTML/CSS/JS', 'HTML/CSS/JS/PHP', 'HTML/CSS/JS', 'HTML/CSS/JS', 'HTML/CSS/JS']
-const projectDuration = ['100h', '60h', '20h', '10h', '4-5h']
-const backgrounds = ['#ffc15e', '#36D9DE', '#DE36A1', '#9936DE', '#3694DE']
-const colors = ['#222', '#fff', '#222', '#fff', '#222']
-const images = ['res/backgroundEveryweb.png', 'res/backgroundSFDALove.png', 'res/backgroundEkip.png', 'res/backgroundHelpME.png', 'res/backgroundWorkout.png']
-const links = ['https://xtsen.github.io/Everyweb/', 'https://xtsen.github.io/SFDA-love/', 'http://so667.epizy.com/', 'http://helpme.byethost8.com/index.html', 'https://xtsen.github.io/Workout/']
+const websites = ['Everyweb', 'SFDApp', 'SFDA love', 'Ekip', 'Help me', 'Workout']
+const Languages = ['HTML/CSS/JS', 'HTML/CSS/JS', 'HTML/CSS/JS/PHP', 'HTML/CSS/JS', 'HTML/CSS/JS', 'HTML/CSS/JS']
+const projectDuration = ['100h', '50h', '10h', '20h', '10h', '4-5h']
+const backgrounds = ['#ffc15e', '#00AA96', '#36D9DE', '#DE36A1', '#9936DE', '#3694DE']
+const colors = ['#222', '#fff', '#222', '#222', '#fff', '#222']
+const images = ['res/backgroundEveryweb.png', 'res/backgroundSFDApp.png', 'res/backgroundSFDALove.png', 'res/backgroundEkip.png', 'res/backgroundHelpME.png', 'res/backgroundWorkout.png']
+const links = ['https://xtsen.github.io/Everyweb/', 'https://xtsen.github.io/le-site-sfda/', 'https://xtsen.github.io/SFDA-love/', 'http://so667.epizy.com/', 'http://helpme.byethost8.com/index.html', 'https://xtsen.github.io/Workout/']
 
 function verifCurrent() {
     current = document.getElementById('siteName').innerText
